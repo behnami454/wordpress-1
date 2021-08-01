@@ -1,0 +1,557 @@
+/*
+Theme Name: Havan
+Theme URI: https://wpkoi.com/havan-wpkoi-wordpress-theme/
+Template: lalita
+Author: wpkoithemes
+Author URI: https://wpkoi.com
+Description: Havan is a child theme for Lalita WPKoi theme. You can find theme demos at wpkoi.com. Havan has a dark, geometric style and design for portfolio, business or agency content. The theme is multipurpose, so if You like the style, You can use it to represent Your art, business, an event, show Your portfolio, start a blog, start a webshop and sell Your products etc. The demos use Elementor, WooCommerce and Contact Form 7 plugins. The premium demo uses the Havan premium plugin also. Havan has an easy to use admin with a lot of customizer functions, so You can build Your dream without coding knowledge. The theme is responsive so looks good on almost every devices. You can setup multiple header styles, navigation styles and layouts. Build You site with Havan Theme and share it with the world! You can also find a documentation with an install guide and a tutorial for the screenshot look on wpkoi.com/docs.
+Version: 1.0.1
+Tested up to: 5.7
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: havan
+Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, footer-widgets, blog, e-commerce, flexible-header, full-width-template, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, featured-images
+
+*/
+
+body {
+  background-color: #151515;
+  padding: 0;
+}
+
+.fluid-header.sticky-enabled .main-navigation.is_stuck .inside-navigation {
+  border-bottom: 2px solid #333;
+}
+
+.havan-scrollbar-style::-webkit-scrollbar {
+  width: 12px;
+}
+
+.havan-scrollbar-style::-webkit-scrollbar-track {
+  background: #555555;
+  border-radius: 0px;
+}
+
+.havan-scrollbar-style::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0;
+}
+
+.havan-scrollbar-style::-webkit-scrollbar-thumb:hover {
+  background: #cccccc;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.inside-top-bar {
+  padding: 10px 120px 0;
+}
+
+.top-bar {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inside-header {
+  padding: 0 115px 0 120px;
+}
+
+.main-title {
+  text-transform: none;
+  font-weight: 900;
+  font-size: 55px;
+  line-height: 1.2;
+}
+
+.havan-logo-effect .main-title a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.havan-logo-effect .main-title a:hover {
+  letter-spacing: 5px;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 0.05s;
+  animation-name: textflickerhavan;
+}
+
+@keyframes textflickerhavan {
+  from {
+    text-shadow: 2px 0 0 #333333, -3px 0 0 #555555;
+  }
+
+  to {
+    text-shadow: 3px 0.5px 1px #555555, -2px -1px 2px #333333;
+  }
+}
+
+.main-navigation a {
+  font-weight: 700;
+  text-transform: none;
+  font-size: 25px;
+}
+
+.main-navigation .main-nav ul li a,
+.main-navigation .mobile-bar-items a,
+.menu-toggle {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 72px;
+}
+
+.menu-item-has-children .dropdown-menu-toggle {
+  padding-left: 10px;
+}
+
+button.menu-toggle:hover,
+button.menu-toggle:focus {
+  background-color: inherit;
+}
+
+.fluid-header.sticky-enabled .main-navigation.is_stuck .inside-navigation {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.button,
+.woocommerce a.button,
+.woocommerce button.button {
+  padding: 12px 25px;
+}
+
+.button,
+.button:visited,
+button:not(.menu-toggle),
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.woocommerce a.button {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: none;
+  border: 2px solid;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.button:visited {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.button:focus {
+  transform: scale(1.1);
+}
+
+.one-container .site-content,
+.separate-containers .comments-area,
+.separate-containers .inside-article,
+.separate-containers .page-header,
+.separate-containers .paging-navigation {
+  padding: 25px 120px 20px;
+}
+
+.site-info {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 120px;
+}
+
+.lalita-side-left-content {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 250px 0px 0px 0px;
+}
+
+.lalita-side-left-content .lalita-side-left-socials ul,
+.lalita-side-left-content .lalita-side-left-text {
+  padding: 20px 15px 22px 15px;
+  margin-top: 50px;
+}
+
+.admin-bar .lalita-side-left-content .lalita-side-left-text {
+  margin-top: 82px;
+}
+
+.page-header-blog-content-h,
+.page-header-blog-content-b {
+  display: inline-block;
+  padding: 0;
+  height: auto;
+  vertical-align: middle;
+}
+
+.page-header-blog-content-h {
+  width: 65%;
+}
+
+.page-header-blog-content.page-header-blog-content-b {
+  width: 32%;
+}
+
+.page-header-blog-content-h .page-header-blog-content {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+.page-header-blog-text,
+.page-header-blog-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.page-header-blog-content h2 {
+  font-size: 105px;
+  font-weight: 900;
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 5%;
+}
+
+.page-header-blog-content h2 {
+  margin-left: 30px;
+}
+
+.page-header-blog-text p {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.page-header-blog-button a.button {
+  border-radius: 0;
+  margin-bottom: 10px;
+  text-transform: none;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.page-header-blog {
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  margin: 0 82px !important;
+}
+
+.page-header-noiseoverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.25;
+  background-color: #151515;
+}
+
+.page-header-blog-inner {
+  max-width: 1300px;
+  margin: auto;
+  padding: 5% 0;
+  z-index: 2;
+}
+
+.site-footer .footer-widgets-container .inner-padding {
+  padding: 0 0 20px 40px;
+}
+
+.footer-widgets {
+  padding: 0 82px;
+}
+
+.widget-title {
+  font-weight: 700;
+}
+
+.elementor-page .screen-reader-text {
+  top: inherit;
+}
+
+.post-type-archive-product.post-image-above-header.woocommerce-page
+  .post-image {
+  display: none;
+}
+
+.entry-summary a,
+.entry-content a,
+.comment-content a,
+.textwidget a {
+  text-decoration: underline;
+}
+
+body .grid-container {
+  max-width: 2000px;
+}
+
+.lalita-side-left-content {
+  width: 80px;
+  height: 100%;
+  margin-top: 0;
+}
+
+.lalita-side-left-socials {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+}
+
+.lalita-side-left-content .lalita-side-left-socials ul {
+  padding: 0 !important;
+}
+
+.lalita-side-left-content .lalita-socials-list li {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  border-top: 2px solid #555;
+}
+
+.lalita-side-left-content .lalita-socials-list a {
+  width: 80px;
+  height: 80px;
+  display: block;
+  background: linear-gradient(
+    90deg,
+    #222222 0,
+    #222222 49.999%,
+    #00000000 50%,
+    #00000000
+  );
+  background-size: 200%;
+  transition: background-position 0.2s ease-out;
+  background-position: 100% 0;
+}
+
+.lalita-side-left-content .lalita-socials-list a:hover {
+  background-position: 0 0;
+}
+
+.lalita-side-left-content .lalita-side-left-text {
+  transform: rotate(90deg);
+  color: #fff;
+  width: 300px;
+}
+
+.havan-footer-widgets .footer-widget-1,
+.havan-footer-widgets .footer-widget-2,
+.havan-footer-widgets .footer-widget-3,
+.havan-footer-widgets .footer-widget-4,
+.havan-footer-widgets .footer-widget-5 {
+  padding: 20px 20px 1000px 0;
+  margin-bottom: -980px !important;
+}
+
+.havan-footer-widgets .inside-footer-widgets .grid-parent {
+  border-right: 2px solid #555;
+  background-color: #151515;
+}
+
+.havan-footer-widgets .inside-footer-widgets .grid-parent:last-child {
+  border-right: none;
+}
+
+.havan-footer-widgets
+  .site-footer
+  .footer-widgets-container
+  .inside-footer-widgets {
+  margin-left: 0;
+  overflow: hidden;
+}
+
+.havan-nav-border .inside-header,
+.havan-nav-border .page-header-blog,
+.fluid-header.sticky-enabled.havan-nav-border
+  .main-navigation.is_stuck
+  .inside-navigation {
+  border-bottom: 2px solid #555555;
+}
+
+.havan-nav-border .havan-border-holders-l,
+.havan-nav-border .havan-border-holders-r {
+  position: fixed;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 10;
+}
+
+.havan-nav-border .havan-border-holders-l {
+  border-right: 2px solid #555555;
+}
+
+.havan-nav-border .havan-border-holders-r {
+  right: 0;
+  border-left: 2px solid #555555;
+}
+
+.havan-nav-border #right-sidebar,
+.havan-nav-border #left-sidebar {
+  border: 2px solid #555555;
+}
+
+.havan-nav-border .footer-widgets-container {
+  border-top: 2px solid #555555;
+  border-bottom: 2px solid #555555;
+}
+
+.havan-nav-border .lalita-back-to-top,
+.lalita-back-to-top {
+  font-size: 50px;
+  border-radius: 0;
+  bottom: 0;
+  right: 0;
+  line-height: 80px;
+  width: 80px;
+  z-index: 11;
+  border-top: 2px solid #555;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.inside-top-bar .textwidget i {
+  margin-right: 5px;
+}
+
+@media (max-width: 1200px) {
+  .page-header-blog-content-h .page-header-blog-content {
+    padding: 0;
+  }
+  .page-header-blog-content-h h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .havan-footer-widgets .inside-footer-widgets .grid-parent {
+    border-right: none;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .page-header-blog-content-h,
+  .page-header-blog-content.page-header-blog-content-b {
+    display: block;
+    width: 100%;
+  }
+  .page-header-blog img {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 5%;
+  }
+  .page-header-blog-content-h h2 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  .page-header-blog-content-h p {
+    font-size: 22px;
+    width: 90%;
+  }
+  .page-header-blog-content-h .page-header-blog-content,
+  .page-header-blog-image {
+    width: initial;
+    margin: 0;
+  }
+  .page-header-blog-content a.button {
+    margin-left: 30px;
+  }
+  .main-navigation.toggled .main-nav li.wpkoi-nav-btn-h {
+    display: inline-block !important;
+  }
+  .main-navigation.toggled .main-nav li.wpkoi-nav-btn-h .wpkoi-nav-btn {
+    padding: 0 25px;
+  }
+  body {
+    padding: 0;
+  }
+  .lalita-side-left-cover,
+  .lalita-side-right-cover {
+    width: 0;
+  }
+  .footer-bar .widget,
+  .footer-bar .lalita-social-bar {
+    float: none;
+    margin: 0 10px;
+  }
+  button:hover,
+  html input[type="button"]:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  a.button:hover,
+  button:focus,
+  html input[type="button"]:focus,
+  input[type="reset"]:focus,
+  input[type="submit"]:focus,
+  a.button:focus,
+  header .main-navigation .main-nav ul li a.wpkoi-nav-btn {
+    transform: scale(1);
+  }
+  .havan-nav-effect .main-navigation .main-nav ul li a:before {
+    content: initial;
+  }
+  .elementor-page #page::-webkit-scrollbar,
+  .elementor-template-canvas .elementor-inner::-webkit-scrollbar,
+  .elementor-template-canvas .elementor-section-wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .havan-footer-widgets .footer-widget-1,
+  .havan-footer-widgets .footer-widget-2,
+  .havan-footer-widgets .footer-widget-3,
+  .havan-footer-widgets .footer-widget-4,
+  .havan-footer-widgets .footer-widget-5 {
+    padding-left: 20px;
+  }
+  .havan-footer-widgets .footer-widgets {
+    padding: 20px;
+  }
+  .page-header-blog {
+    margin: 20px !important;
+  }
+  .havan-nav-border .havan-border-holders-l,
+  .havan-nav-border .havan-border-holders-r {
+    display: none;
+  }
+  .inside-top-bar,
+  .site-info {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .havan-nav-border .lalita-back-to-top,
+  .lalita-back-to-top {
+    font-size: 25px;
+    line-height: 50px;
+    width: 50px;
+    border-top: none;
+  }
+}

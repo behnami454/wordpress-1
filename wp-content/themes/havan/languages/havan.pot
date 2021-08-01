@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-16 10:28+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.php:106
+msgid "Havan Effects"
+msgstr ""
+
+#: functions.php:126
+msgid "Havan extra borders"
+msgstr ""
+
+#: functions.php:128 functions.php:153 functions.php:178 functions.php:203
+#: functions.php:228
+msgid "Enable"
+msgstr ""
+
+#: functions.php:129 functions.php:154 functions.php:179 functions.php:204
+#: functions.php:229
+msgid "Disable"
+msgstr ""
+
+#: functions.php:151
+msgid "Havan footer widgets"
+msgstr ""
+
+#: functions.php:176
+msgid "Havan scrollbar style"
+msgstr ""
+
+#: functions.php:201
+msgid "Logo effect"
+msgstr ""
+
+#: functions.php:226
+msgid "Cursor effect"
+msgstr ""
